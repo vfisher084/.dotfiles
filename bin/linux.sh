@@ -20,7 +20,7 @@ if [ -f "$HOME/.nanorc" ]; then
 fi
 
 # Copy the .nanorc file from ./etc/nanorc to the user's home directory
-cp ./etc/nanorc "$HOME/.nanorc"
+cp ./etc/.nanorc "$HOME/.nanorc"
 echo "Copied ./etc/nanorc to $HOME/.nanorc." >> linuxsetup.log
 
 # Append the source command to .bashrc

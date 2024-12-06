@@ -1,8 +1,5 @@
-.PHONY: linux clean
-
 linux: clean
-    ./bin/linux.sh
-
+	./bin/linux.sh
 clean:
-    ./bin/cleanup.sh
+	./bin/cleanup.sh
 
