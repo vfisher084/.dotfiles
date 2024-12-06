@@ -1,0 +1,28 @@
+https://github.com/vfisher084/.dotfiles/commit/3fbf7ad2981fb73f8a6818f5e153febe97b35725
+I didn't have too much difficulty completing this homework. The part that was most difficult for me was probably just figuring out how to connect to the computers in the lab room. I watched the video and figured out how to use the VPN and everything worked fine from there. I would have completed this assignment in lab at school if I'd had the time. Otherwise, the instructions were very straight-forward and I already had a GitHub account created thanks to a previous class I've taken, so I didn't have any struggles with that.
+Listed commands I used below:
+git config --global user.name "Veronica Fisher"
+git config --global user.email "vfisher@email.sc.edu"
+mkdir ~/.ssh
+cd ~/.ssh
+touch config
+vi config
+mkdir github
+cd github
+ssh-keygen -t ed25519 -a 203 -f ./id_ed25519
+ls
+mkdir .dotfiles
+cd .dotfiles
+touch README.md
+vi README.md
+cat README.md
+nano .nanorc
+cp .nanorc ~/
+git init
+git add --all
+git commit -m "INIT commit"
+git branch -M main
+git remote add origin git@github.com:vfisher084/.dotfiles
+git push -u origin main
+
+SOURCES: I did have to google a few commands that I forgot how to use, but otherwise I just followed the instructions.
